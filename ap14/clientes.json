@@ -1,0 +1,61 @@
+[{
+"_id": "1",
+"nome": "Ana",
+"telefone": "(61) 98765-4321",
+"plano": "mensalista"
+},
+{
+"_id": "2",
+"nome": "Joao",
+"telefone": "(61) 98765-4321",
+"plano": "mensalista"
+},
+{
+"_id": "3",
+"nome": "yuri",
+"telefone": "(61) 98765-4321",
+"plano": "mensalista"
+},
+{
+"_id": "4",
+"nome": "rafa",
+"telefone": "(61) 98765-4321",
+"plano": "mensalista"
+},
+{
+"_id": "5",
+"nome": "renato",
+"telefone": "(61) 98765-4321",
+"plano": "mensalista"
+},
+{
+"_id": "6",
+"nome": "dutra",
+"telefone": "(61) 98765-4321",
+"plano": "diaria"
+},
+{
+"_id": "7",
+"nome": "pig",
+"telefone": "(61) 98765-4321",
+"plano": "diaria"
+},
+{
+"_id": "8",
+"nome": "gabriel",
+"telefone": "(61) 98765-4321",
+"plano": "diaria"
+},
+{
+"_id": "9",
+"nome": "pedro",
+"telefone": "(61) 98765-4321",
+"plano": "diaria"
+},
+{
+"_id": "10",
+"nome": "mateus",
+"telefone": "(61) 98765-4321",
+"plano": "diaria"
+}
+]

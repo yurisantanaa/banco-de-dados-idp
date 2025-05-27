@@ -1,0 +1,58 @@
+Consultas:
+- db.clientes.find()
+- db.clientes.find({ "_id": "1" })
+- db.clientes.find({ "plano": "mensalista" })
+- db.estacionamento.find()
+- db.estacionamento.find({ "localizacao": /Taguatinga/i })
+- db.uso_vaga.find()
+- db.uso_vaga.find({ "placa": "XYZ-9876" })
+- db.uso_vaga.find({
+-   "entrada": {
+    $gte: ISODate("2025-05-27T00:00:00Z"),
+    $lt: ISODate("2025-05-28T00:00:00Z")
+  }
+})
+- db.uso_vaga.find({ "valor_pago": { $gt: 15 } })
+- db.Veiculo.find()
+- db.Veiculo.find({ "placa": "XYZ-2314" })
+- db.Veiculo.find({ "placa": "XYZ-2314" })
+- db.Veiculo.find({ "cor": "Prata" })
+- db.Veiculo.find({ "proprietario.nome": "Joao" })
+- db.Veiculo.aggregate([
+-  {
+    $lookup: {
+      from: "clientes",
+      localField: "proprietario.cpf",
+      foreignField: "_id",
+      as: "cliente_info"
+    }
+  },
+  {
+    $match: {
+      "cliente_info.plano": "mensalista"
+    }
+  }
+])
+- db.uso_vaga.aggregate([
+  {
+    $group: {
+      _id: { $dateToString: { format: "%Y-%m-%d", date: "$entrada" } },
+      total: { $sum: "$valor_pago" },
+      count: { $sum: 1 }
+    }
+  },
+  { $sort: { "_id": 1 } }
+])
+- db.uso_vaga.aggregate([
+  {
+    $group: {
+      _id: "$vaga",
+      count: { $sum: 1 },
+      total: { $sum: "$valor_pago" }
+    }
+  },
+  { $sort: { "count": -1 } }
+])
+
+Analise:
+O modelo NoSQL foi mais fácil na parte de estruturação flexível dos dados, permitindo alterações rápidas sem a rigidez de esquemas. No entanto, a ausência de relacionamentos claros e normalização dificultou a integridade dos dados em operações mais complexas. Se eu fosse desenvolver esse sistema com foco em escalabilidade, adotaria uma abordagem híbrida: usaria NoSQL para dados de alta leitura, como histórico de acesso ao estacionamento, e manteria um banco relacional para transações críticas. Para o domínio "estacionamento", o modelo relacional se adequa melhor, pois envolve entidades bem definidas (veículo, vaga, cliente) e regras claras de integridade e relacionamento entre elas, essenciais para garantir consistência e segurança das operações.

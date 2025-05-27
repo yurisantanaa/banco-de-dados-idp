@@ -1,0 +1,82 @@
+
+[{
+"placa": "XYZ-9876",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "1",
+  "nome": "Ana"
+}},
+{
+"placa": "XYZ-2314",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "2",
+  "nome": "Joao"
+}},
+{
+"placa": "XYZ-7342",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "3",
+  "nome": "yuri"
+}},
+{
+"placa": "XYZ-8976",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "4",
+  "nome": "rafa"
+}},
+{
+"placa": "XYZ-1234",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "5",
+  "nome": "renato"
+}},
+{
+"placa": "XYZ-2345",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "6",
+  "nome": "dutra"
+}},
+{
+"placa": "XYZ-4552",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "7",
+  "nome": "pig"
+}},
+{
+"placa": "XYZ-4677",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "8",
+  "nome": "gabriel"
+}},
+{
+"placa": "XYZ-5423",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "9",
+  "nome": "pedro"
+}},
+{
+"placa": "XYZ-0990",
+"tipo": "Hatch",
+"cor": "Prata",
+"proprietario": {
+  "cpf": "10",
+  "nome": "mateus"
+}}
+]

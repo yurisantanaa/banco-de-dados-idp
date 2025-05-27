@@ -1,0 +1,55 @@
+[{
+"nome": "Estacionamento 01",
+"localizacao": "Taguatinga Centro - DF",
+"capacidade": 50
+},
+{
+"nome": "Estacionamento 02",
+"localizacao": "Asa Norte",
+"capacidade": 100
+},
+{
+"nome": "Estacionamento 03",
+"localizacao": "Asa Sul",
+"capacidade": 150
+},
+{
+"nome": "Estacionamento 03",
+"localizacao": "Lago Norte",
+"capacidade": 200
+},
+{
+"nome": "Estacionamento 04",
+"localizacao": "Lago Sul",
+"capacidade": 250
+},
+{
+"nome": "Estacionamento 05",
+"localizacao": "Noroeste",
+"capacidade": 300
+},
+{
+"nome": "Estacionamento 06",
+"localizacao": "Sudoeste",
+"capacidade": 350
+},
+{
+"nome": "Estacionamento 07",
+"localizacao": "Gama",
+"capacidade": 400
+},
+{
+"nome": "Estacionamento 08",
+"localizacao": "Aguas Claras",
+"capacidade": 450
+},
+{
+"nome": "Estacionamento 09",
+"localizacao": "Ceilandia",
+"capacidade": 500
+},
+{
+"nome": "Estacionamento 10",
+"localizacao": "Setor de clubes Norte",
+"capacidade": 550
+}]

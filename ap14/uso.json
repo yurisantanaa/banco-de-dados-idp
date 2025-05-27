@@ -1,0 +1,72 @@
+[
+{
+  "placa": "XYZ-9876",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V01",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-2443",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V02",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-1455",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V03",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-9090",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V04",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-7777",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V05",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-9999",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V06",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-8889",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V07",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-1111",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V08",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-2222",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V09",
+  "valor_pago": 20.00  
+},
+{
+  "placa": "XYZ-0000",
+  "entrada": "2025-05-27T08:00:00Z",
+  "saida": "2025-05-27T18:00:00Z",
+  "vaga": "V10",
+  "valor_pago": 20.00  
+}
+]
