@@ -1,9 +1,11 @@
 package com.idp.bancodedados.video.api.service;
 
-import org.springframework.stereotype.Service;
+import java.util.Optional;
 
-import com.idp.bancodedados.video.api.converter.VideoMapper;
-import com.idp.bancodedados.video.api.response.VideoResponseDto;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.idp.bancodedados.video.api.request.VideoPostDTO;
 import com.idp.bancodedados.video.infrastructure.entitity.Video;
 import com.idp.bancodedados.video.infrastructure.repository.VideoRepository;
 
@@ -14,14 +16,19 @@ import lombok.RequiredArgsConstructor;
 public class VideoService {
 
   private final VideoRepository repository;
-  private final VideoMapper mapper;
-  
-  public VideoResponseDto buscarVideo(String titulo) {
+
+  public Optional<Video> buscarVideo(String titulo) {
     try {
-      Video video = repository.findByTitulo(titulo);
-      return mapper.paraVideoResponseDto(video);
+      Optional<Video> video = repository.findByTitulo(titulo);
+      return video;
     } catch (Exception e) {
-      throw new RuntimeException();
+      throw new RuntimeException("erro ao buscar titulo " + titulo);
     }
   }
+
+    public Video criarVideo(@RequestBody VideoPostDTO video) {
+        Video novoVideo = new Video(video);
+        novoVideo = repository.save(novoVideo);
+        return novoVideo;
+    }
 }

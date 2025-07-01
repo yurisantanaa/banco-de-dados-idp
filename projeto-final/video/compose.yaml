@@ -1,9 +1,18 @@
+
+version: '3.8'
+
 services:
-  mongodb:
-    image: 'mongo:latest'
-    environment:
-      - 'MONGO_INITDB_DATABASE=mydatabase'
-      - 'MONGO_INITDB_ROOT_PASSWORD=secret'
-      - 'MONGO_INITDB_ROOT_USERNAME=root'
+
+  mongo-db:
+    image: mongo:latest
+    container_name: mongo-videos-db
+    restart: always
     ports:
-      - '27017'
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+
+volumes:
+  mongo-data:
+    driver: local
